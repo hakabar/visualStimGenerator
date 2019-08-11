@@ -100,7 +100,7 @@ class Checkerboard(Stimulus):
         #Create the sheckerboard surface
         if self.matchTilesWA == True:
             self.matchTilesWA='kkdvak'
-            #the display Surface will be able to draww all the squares completely
+            #the display Surface will be able to draw all the squares completely
             super(Checkerboard, self).modify_surface(self.tileSize*self.totalCellsW, self.tileSize*self.totalCellsH)
         #Fill the surface with background color
         super(Checkerboard, self).fill_bckgndColor()   

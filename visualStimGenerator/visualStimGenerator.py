@@ -1,15 +1,15 @@
 
 """
 Script to  generate visual stimuli on a screen/projector. It use the following
- - visualStimuli.py:    File containing all the classes of visual stimuli used.
- - confExperiment.py:   File with the experiment settings (which type of visual stimulus plot and where) 
+ - visualStimuliLib.py:    File containing all the classes of visual stimuli used.
+ - expSettings.py:   File with the experiment settings (which type of visual stimulus plot and where) 
 """
 
 
 
 
-import visualStimLib as generator
-import confExperiment as settings
+import visualStimuliLib as generator
+import expSettings as settings
 import pygame as pg
 import time
 import yaml
@@ -17,57 +17,20 @@ import yaml
 
 
 
-
-
-def test_classes(index, stimuli):
-    stimToShow=stimuli[index]
-    displayDuration= 5   #number of seconds ploting the stimulus
-
-    #Draw the stimulus one
-    if stimToShow == stimuli[0]:
-        visualStim= generator.Checkerboard()
-        print("match tiles to WA?  %s "%visualStim.get_matchTilesWA())
-        visualStim.plot()
-    elif stimToShow == stimuli[1]:
-        visualStim= generator.Horizon()
-        visualStim.plot()
-    elif stimToShow == stimuli[2]:
-        visualStim= generator.Circle()
-        visualStim.plot()
-    elif stimToShow == stimuli[3]:
-        visualStim= generator.Rectangle()
-        visualStim.plot()
-    else:
-        projection= generator.Stimulus()
-        v1= generator.Rectangle()
-        v2= generator.Circle()
-    
-        v1.plot(projection.get_surface())
-        v2.plot(projection.get_surface())
-    
-
-    #Show the stimulus for a given time
-    time.sleep(displayDuration)
-    #close Pygame window and exit
-    pg.display.quit()
-    pg.quit()
-
-
-
-def test_from_dict(stimToShow):
+def create_stimulus(stimToShow):
     #dict names
-    typeStim= 'type'
-    dispS= 'displaySurface'
-    dispP= 'displayPosition'
-    bckgndC= 'bckgndColor'
-    color= 'color'
-    tSize= 'tileSize'
-    matchTiles= 'matchTilesWA'
-    horizonLvl= 'horizonLvl'
-    rad= 'radius'
-    pos= 'position'
-    rectW= 'rectW'
-    rectH= 'rectH'
+    typeStim=   settings.typeStim
+    dispS=      settings.dispS
+    dispP=      settings.dispP
+    bckgndC=    settings.bckgndC
+    color=      settings.color
+    tSize=      settings.tSize
+    matchTiles= settings.matchTiles
+    horizonLvl= settings.horizonLvl
+    rad=        settings.rad
+    pos=        settings.pos
+    rectW=      settings.rectW
+    rectH=      settings.rectH
 
 
     #Draw the stimulus one
@@ -102,15 +65,5 @@ def test_from_dict(stimToShow):
 
 
 # ----- MAIN ----- 
-
-#data={}
-
-# Read YAML file
-#with open("test.yaml", 'r') as stream:
-#    data_loaded = yaml.load(stream)
-#    prettyprint(data_loaded)
-
-
-#stimuli= ['checkerboard', 'horizon', 'circle', 'rectangle', 'circle_and_rectangle']
 for shape in settings.stimuli:
-    test_from_dict(shape)
+    create_stimulus(shape)
