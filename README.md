@@ -6,6 +6,7 @@ It use the following files:
  - *visualStimGenerator.py*: Main code to read the settings of the experiment defined in expSettings.py and create the requested visual stimulus/stimuli from the stimuli classes defined in visualStimGenerator.py
  
  The current types of cisual stimuli that can create this software are:
+ 
  **Checkerborad**
    - tileSize:         Size of the checkerboard tiles (in pixels)
    - matchTilesWA:     If True the drawing surface expand to be filled by full tiles. 
