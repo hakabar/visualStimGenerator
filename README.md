@@ -5,30 +5,30 @@ It use the following files:
  - *expSettings.py*:   File with the experiment settings (which type of visual stimulus plot and where) 
  - *visualStimGenerator.py*: Main code to read the settings of the experiment defined in expSettings.py and create the requested visual stimulus/stimuli from the stimuli classes defined in visualStimGenerator.py
  
- The current types of cisual stimuli that can create this software are:
+ The current types of visual stimuli that can create this software are:
  
- **Checkerborad**
+ **Checkerboard**
    - tileSize:         Size of the checkerboard tiles (in pixels)
    - matchTilesWA:     If True the drawing surface expand to be filled by full tiles. 
                         If False the end of the drawing surface can be filled with partial tiles
    - color:            Color assigned to the visual stimulus
-   - displaySurface:   [width, height] of the PyGame window (where the stimulus will be drawed)
-   - displayPosition:  Postion in the screen/projection of the PyGame window
+   - displaySurface:   [width, height] of the PyGame window (where the stimulus will be drawn)
+   - displayPosition:  Position in the screen/projection of the PyGame window
    - bckgndColor:      Color to fill the PyGame windows as background    
     
 **Horizon**
    - horizonLvl:       Level of the horizon in the PyGame window. It will cover 1/horizonLvl of the PyGame window
    - color:            Color assigned to the visual stimulus
-   - displaySurface:   [width, height] of the PyGame window (where the stimulus will be drawed)
-   - displayPosition:  Postion in the screen/projection of the PyGame window
+   - displaySurface:   [width, height] of the PyGame window (where the stimulus will be drawn)
+   - displayPosition:  Position in the screen/projection of the PyGame window
    - bckgndColor:      Color to fill the PyGame windows as background  
 
 **Circle**
    - position:         Position of the center of the circle in the PyGame window
    - radius:           Radius of the circle
    - color:            Color assigned to the visual stimulus
-   - displaySurface:   [width, height] of the PyGame window (where the stimulus will be drawed)
-   - displayPosition:  Postion in the screen/projection of the PyGame window
+   - displaySurface:   [width, height] of the PyGame window (where the stimulus will be drawn)
+   - displayPosition:  Position in the screen/projection of the PyGame window
    - bckgndColor:      Color to fill the PyGame windows as background  
 
 **Rectangle**
@@ -36,6 +36,6 @@ It use the following files:
    - rectW:            Width of the rectangle
    - rectH:            Height of the rectangle
    - color:            Color assigned to the visual stimulus
-   - displaySurface:   [width, height] of the PyGame window (where the stimulus will be drawed)
-   - displayPosition:  Postion in the screen/projection of the PyGame window
+   - displaySurface:   [width, height] of the PyGame window (where the stimulus will be drawn)
+   - displayPosition:  Position in the screen/projection of the PyGame window
    - bckgndColor:      Color to fill the PyGame windows as background  
