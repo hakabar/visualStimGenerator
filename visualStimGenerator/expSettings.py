@@ -66,7 +66,7 @@ rectH= 'rectH'
 # 1. Add as many dictionaties as shapes needed to be ploted
 # 2. Add the name of the dictionaries to the stimuli list (at the end of the file)
 # 3. Run python MainScript.py in the command line to plot the stimuli in defined in this file
-displayDuration= 5   #number of seconds ploting each of the stimuli
+displayDuration= 30   #number of seconds ploting each of the stimuli
     
 
 
@@ -75,8 +75,8 @@ shape1= {
     "tileSize": 20,
     "matchTilesWA": True, 
     "color": (120, 120,120), 
-    "displaySurface": [600,400],
-    "displayPosition": (150,50),
+    "displaySurface": [800,500],
+    "displayPosition": (0,0),
     "bckgndColor": (0,0,0)
     }
 
@@ -84,8 +84,8 @@ shape2= {
     "type": typesOfShapes[1], 
     "horizonLvl": 3, 
     "color": (120, 120,120), 
-    "displaySurface": [600,400],
-    "displayPosition": (150,50),
+    "displaySurface": [800, 500],
+    "displayPosition": (1529,0),
     "bckgndColor": (0,0,0)
     }
 
@@ -94,8 +94,8 @@ shape3= {
     "position": (100,100), 
     "radius": 30,
     "color": (120, 120,120), 
-    "displaySurface": [600,400],
-    "displayPosition": (150,50),
+    "displaySurface": [800, 500],
+    "displayPosition": (0,999),
     "bckgndColor": (0,0,0)
     }
 
@@ -105,8 +105,8 @@ shape4= {
     "rectW": 60,
     "rectH": 90,
     "color": (120, 255,120), 
-    "displaySurface": [600,400],
-    "displayPosition": (150,50),
+    "displaySurface": [800, 500],
+    "displayPosition": (1529,999),
     "bckgndColor": (0,0,0)
     }
 
