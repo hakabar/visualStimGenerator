@@ -39,3 +39,7 @@ It use the following files:
    - displaySurface:   [width, height] of the PyGame window (where the stimulus will be drawn)
    - displayPosition:  Position in the screen/projection of the PyGame window
    - bckgndColor:      Color to fill the PyGame windows as background  
+
+The following image shows each one of the visual stimuli available:
+
+![Visal Stimuli](VisualStimGenerator_Example_med.png)
